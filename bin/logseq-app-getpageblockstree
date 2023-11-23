@@ -23,7 +23,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Use jq to parse and display the response
-echo "${response}"
+# echo "${response}"
 parsed_response=$(echo "${response}" | jq)
 if [ $? -ne 0 ]; then
   echo "Error: Failed to parse the API response."
